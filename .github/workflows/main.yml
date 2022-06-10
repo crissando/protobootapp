@@ -38,4 +38,4 @@ jobs:
         env:
           HEROKU_API_KEY: ${{secret.HEROKU_API_KEY}}
           HEROKU_API_NAME: $app-git-hub-actions
-        run: heroku plugins:install java && heroku deploy:jar target/app-git-hub-actions-0.0.1-SNAPSHOT.jar -- jdk 17 -Dserver.port = $PORT --app $HEROKU_APP_NAME
+        run: heroku plugins:install java && heroku deploy:jar target/protobootapp-0.0.1-SNAPSHOT.jar -- jdk 17 -Dserver.port = $PORT --app $HEROKU_APP_NAME
