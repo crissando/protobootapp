@@ -25,4 +25,4 @@ jobs:
           java-version: '17'
           cache: maven
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots package
+        run: mvn -B clean install --file pom.xml
